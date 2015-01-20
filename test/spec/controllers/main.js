@@ -16,7 +16,18 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+
+  it('should attach a list of things I might be doing on the cope', function () {
+    expect(scope.thingsIMightBeDoing.length).toBeGreaterThan(0);
+  });
+
+  it('should let me start and stop the timer', function () {
+    expect(scope.startTime).toBe(null);
+    scope.toggleTimer();
+    expect(scope.totalTime).toBe(null);
+    expect(scope.startTime).not.toBe(null);
+    scope.toggleTimer();
+    expect(scope.totalTime).not.toBe(null);
+    expect(scope.startTime).toBe(null);
   });
 });

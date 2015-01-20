@@ -3,12 +3,25 @@
   <p class="lead">
     Just in case you take too long.
   </p>
-  <div class="col-md-4">
-  	<img src="images/ftaclock.jpg" class="img-responsive img-rounded" />
+</div>
+
+<div class="row">
+gry  <div class="col-md-4">
+    <img src="images/ftaclock.jpg" class="img-responsive img-rounded" />
   </div>
+  
   <div class="col-md-6">
-  	{{totalTime}}
-  	<button class="btn btn-success" ng-click="toggleTimer()">Start</button>
+
+    <h4>What are you doing?</h4>
+
+    <p ng-if="selectedTask">{{selectedTask}}</p>
+
+    <p ng-if="totalTime">Congratulations you spent {{totalTime}}s doing: {{previousTask}}</p>
+
+    <select ng-if="!startTime" ng-options="item as item for item in thingsIMightBeDoing" ng-model="selectedTask" />
+
+    <button ng-if="!startTime" class="btn btn-success" ng-click="toggleTimer()">Start</button>
+    <button ng-if="startTime" class="btn btn-danger" ng-click="toggleTimer()">Stop</button>
   </div>
   <div class="clearfix"></div>
 </div>
