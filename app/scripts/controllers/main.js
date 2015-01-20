@@ -14,4 +14,20 @@ angular.module('ftaTimerApp')
       'AngularJS',
       'Karma'
     ];
+
+
+    $scope.startTime = null;
+
+    $scope.totalTime = null;
+
+    $scope.toggleTimer = function(){
+    	if($scope.startTime){
+    		$scope.totalTime = Math.floor(Date.now() / 1000) - $scope.startTime;
+    		$scope.startTime = null;
+    	}else{
+    		$scope.totalTime = null;
+    		$scope.startTime = Math.floor(Date.now() / 1000);
+
+    	}
+    };
   });
