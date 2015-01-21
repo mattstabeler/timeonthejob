@@ -9,21 +9,29 @@ A simple timer
 
 Install yeoman and associated dependencies.
 
-    Npm install -g yo grunt-cli gulp
+    npm install -g yo grunt-cli gulp
 
 Pull down the source
 
 Install bower and Npm things
 
-    Npm install
+    npm install
 
-    Bower install
+    bower install
 
 Serve up the app
-    Grunt serve
+
+    grunt serve
 
 Run the tests 
-    Grunt test
+
+    grunt test
 
 Build 
-    Grunt
+
+    grunt
+
+Publish on GitHub pages after building 
+
+    git subtree push --prefix dist origin gh-pages
+
