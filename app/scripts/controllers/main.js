@@ -36,4 +36,15 @@ angular.module('ftaTimerApp')
     	}
     };
 
+    $scope.showMessage= function(){
+      return $scope.selectedTask && $scope.startTime;
+    };
+
+    $scope.isStarted = function(){
+      return $scope.startTime !== null;
+    };
+    $scope.getTasks = function(){
+      return $scope.thingsIMightBeDoing;
+    };
+
   });
