@@ -8,7 +8,8 @@
 A simple timer
 
 Install yeoman and associated dependencies.
-    Npm Np install -g yo grunt-cli gulp
+
+    Npm install -g yo grunt-cli gulp
 
 Pull down the source
 
