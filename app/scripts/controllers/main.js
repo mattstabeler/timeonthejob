@@ -11,11 +11,13 @@ angular.module('ftaTimerApp')
   .controller('MainCtrl', function ($scope) {
 
     $scope.thingsIMightBeDoing = [
+      'Updating my TFS tasks',
+      'Not bumping my head on low ceilings',
+      'Not walking into cherry pickers',
+      'Not doing strange yet undefined in the Men\'s loo',
       'Not putting teaspoons in the toilet',
-      'Not doing something strange Men\'s loo',
       'Reverse parking',
-      'Not putting the wrong plastic in the wrong place',
-      'Not bumping my head on low hanging walls'
+      'Not putting plastic cups in the wrong bin',
     ];
 
     $scope.startTime = null;
