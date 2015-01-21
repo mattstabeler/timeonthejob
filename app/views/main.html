@@ -14,14 +14,18 @@
 
     <h4>What are you doing?</h4>
 
-    <p ng-if="selectedTask">{{selectedTask}}</p>
+    <h5 ng-if="selectedTask && startTime">{{selectedTask}} <small>Since {{startTime | date:'mediumTime'}}</small></h5>
+
 
     <p ng-if="totalTime">Congratulations you spent {{totalTime}}s doing: {{previousTask}}</p>
 
-    <select ng-if="!startTime" ng-options="item as item for item in thingsIMightBeDoing" ng-model="selectedTask" />
 
-    <button ng-if="!startTime" class="btn btn-success" ng-click="toggleTimer()">Start</button>
-    <button ng-if="startTime" class="btn btn-danger" ng-click="toggleTimer()">Stop</button>
+    <select ng-options="item as item for item in thingsIMightBeDoing" ng-model="selectedTask" />
+
+    <div>
+        <button ng-if="!startTime" class="btn btn-success" ng-click="toggleTimer()">Start</button>
+        <button ng-if="startTime" class="btn btn-danger" ng-click="toggleTimer()">Stop</button>
+    </div>
   </div>
   <div class="clearfix"></div>
 </div>
