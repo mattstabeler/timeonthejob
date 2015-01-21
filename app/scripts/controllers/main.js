@@ -14,7 +14,7 @@ angular.module('ftaTimerApp')
       'Updating my TFS tasks',
       'Not bumping my head on low ceilings',
       'Not walking into cherry pickers',
-      'Not doing strange yet undefined in the Men\'s loo',
+      'Not doing strange yet undefined things in the Men\'s loo',
       'Not putting teaspoons in the toilet',
       'Reverse parking',
       'Not putting plastic cups in the wrong bin',
