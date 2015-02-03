@@ -18,6 +18,8 @@ angular.module('ftaTimerApp')
       'Not putting teaspoons in the toilet',
       'Reverse parking',
       'Not putting plastic cups in the wrong bin',
+      'Not using the drip tray as a sink',
+      'Not putting Jam in the photocopier'
     ];
 
     $scope.startTime = null;
