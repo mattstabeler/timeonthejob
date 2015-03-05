@@ -13,7 +13,7 @@
   <div class="col-md-6">
 
     <h4>What are you doing?</h4>
-    <select ng-options="item as item for item in getTasks()" ng-model="selectedTask" ></select>
+    <select ng-options="item as item for item in getTasks() | orderBy:'toString()'" ng-model="selectedTask" ></select>
 
     <div>
         <button ng-if="!isStarted()" class="btn btn-success" ng-click="toggleTimer()">Start</button>
