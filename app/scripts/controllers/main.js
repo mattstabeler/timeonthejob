@@ -19,7 +19,8 @@ angular.module('ftaTimerApp')
       'Reverse parking',
       'Not putting plastic cups in the wrong bin',
       'Not using the drip tray as a sink',
-      'NOT putting Jam in the photocopier'
+      'NOT putting Jam in the photocopier',
+      'Poop\'n'
     ];
 
     $scope.startTime = null;
