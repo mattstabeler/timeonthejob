@@ -35,3 +35,4 @@ Publish on GitHub pages after building
 
     git subtree push --prefix dist origin gh-pages
 
+<!-- codeship?! -->
