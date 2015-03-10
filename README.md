@@ -34,8 +34,12 @@ Build
 
     grunt
 
-Publish on GitHub pages after building 
+# Heroku
+the Procfile is set up to serve using apache+php - but actually it's just html+css+js. There are multiple build packs configured to 
+1 - generate dist folder (minify, uglify, CDNify and Imageminify the source into a bundle)
+2 - setup the heroku server for apache+php. 
 
-    git subtree push --prefix dist origin gh-pages
+Coming soon:
 
-<!-- codeship?! -->
+Create a PHP API with unit tests and get it to build auto-magically
+
