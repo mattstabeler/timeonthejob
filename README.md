@@ -6,7 +6,7 @@
 
 [ ![Codeship Status for mattstabeler/timeonthejob](https://codeship.com/projects/6f4405c0-a70f-0132-f240-466e34a6b6a7/status?branch=master)](https://codeship.com/projects/67140)
 
-[View Site](http://mattstabeler.github.io/timeonthejob/)
+[View Site](https://timeonthejob.herokuapp.com/)
 
 A simple timer
 
