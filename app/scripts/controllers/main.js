@@ -11,6 +11,7 @@ angular.module('ftaTimerApp')
   .controller('MainCtrl', function ($scope) {
 
     $scope.thingsIMightBeDoing = [
+      'Dilligently following back of loo cubicle door instructions',
       'Cleaning china in the lav',
       'Updating my TFS tasks',
       'Not bumping my head on low ceilings',
